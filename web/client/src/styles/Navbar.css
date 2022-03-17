@@ -1,0 +1,121 @@
+/* CSS part for navbar, make sure to set "Header" in the scrolling effect function when calling it in other files. */
+
+/* 
+
+How to call navbar in other files:
+
+<Navbar /> component must be in the main <div className={`${isShrunk ? 'Header' : ''}`}> of the file
+Just add the following code without change anything :
+
+	const [isShrunk, setShrunk] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                setShrunk(true);
+            } else {
+                setShrunk(false);
+            }
+        });
+        return () => window.removeEventListener("Header", () => { });
+    }, [isShrunk]);
+
+*/
+
+header {
+	display: flex;
+	padding: 30px;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: 300ms;
+}
+
+.Header-nav {
+	margin-right: 70px;
+}
+
+.Header-nav a {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	letter-spacing: 2px;
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 15px;
+	text-decoration: none;
+	color: whitesmoke;
+	text-transform: uppercase;
+	border-bottom: 3px solid transparent;
+	padding: 10px 1px;
+	transition: 300ms;
+}
+
+.Header-link-active:hover {
+	border-color: crimson;
+}
+
+.Header-nav .Header-link:hover {
+	border-color: #00B3FF;
+}
+
+.Header-title {
+	flex: 1;
+	background-image: url(https://media.giphy.com/media/pOhqA8rf4IwuDoM0QI/giphy.gif);
+	background-position: center;
+	color: transparent;
+	background-size: cover;
+	font-size: 45px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	letter-spacing: 15px;
+	margin-left: 70px;
+	background-clip: text;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	transition: 300ms;
+}
+
+.Header header {
+	background-color: black;
+	border-bottom: 3px solid crimson;
+	border-radius: 0 0 7px 7px;
+}
+
+.Header .Header-title {
+	font-size: 40px;
+	color: rgb(219, 219, 219);
+}
+
+.Header .Header-nav .Header-link {
+	color: rgb(173, 173, 173);
+}
+
+.Header .Header-nav .Header-link:hover {
+	color: white;
+}
+
+.Header .Header-nav .Header-link-active {
+	color: rgb(151, 151, 151);
+}
+
+.Header .Header-nav .Header-link-active:hover {
+	color: white
+}
+
+@media (max-width: 769px) {
+	header {
+		flex-direction: column;
+		padding: 5px;
+		padding-top: 20px;
+	}
+
+	.Header-nav {
+		padding: 15px;
+		padding-bottom: 10px;
+		margin: 0px;
+	}
+
+	.Header-title {
+		margin-left: 0;
+	}
+}

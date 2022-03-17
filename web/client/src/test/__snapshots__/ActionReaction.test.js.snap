@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components : ActionsReactions renders correctly 1`] = `
+<div
+  className="row"
+>
+  Action = undefined Reaction = undefined
+</div>
+`;

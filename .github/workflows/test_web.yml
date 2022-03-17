@@ -1,0 +1,46 @@
+name: TestWeb
+
+on:
+  push:
+    branches:
+      - master
+      - main
+      - dev
+      - web
+      - backend
+
+jobs:
+  WebsiteTest:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.15.1]
+
+    steps:
+      - name: Checkout
+        uses: actions/Checkout@v2
+
+      - name: Install dependecies server
+        run: npm install ././web/server
+
+      - name: Install dependecies client
+        run: npm install ././web/client
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Move folder
+        run: cd ./web/client
+
+      - name: Build client
+        run: npm run build --if-present
+
+      - name: Move folder
+        run: cd ./web/server
+
+      - name: Build server
+        run: npm run build --if-present

@@ -1,0 +1,62 @@
+.Url {
+    height: 100vh;
+    min-width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(-30deg, #FC415A, #591BC5, #212335);
+	background-size: 500% 130%;
+	animation: Gradient 40s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Url-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    color: rgb(209, 209, 209);
+}
+
+.Url-input {
+    width: 100%;
+    border-radius: 9px;
+    border: none;
+    padding: 0.7em;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    font-size: 1.5em;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-color: #1bc55c;
+    transition: all 0.3s ease;
+}
+
+.Url-input:focus {
+    border-color: #1bc55c;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Url-button {
+    width: 30%;
+    border-radius: 9px;
+    border: none;
+    padding: 0.7em;
+    margin-bottom: 1.5em;
+    font-size: 1.2em;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.Url-button:hover {
+    background-color: #FC415A;
+    color: white;
+}

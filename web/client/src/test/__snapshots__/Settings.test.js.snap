@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages : Settings renders correctly 1`] = `
+<div
+  className="Settings"
+>
+  <div
+    className="Settings-container"
+  >
+    <div
+      className="Settings-content"
+    >
+      <div
+        className="Settings-content-item"
+      >
+        <h3>
+          IP
+        </h3>
+        <input
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+        />
+      </div>
+      <div
+        className="Settings-content-item"
+      >
+        <h3>
+          Email
+        </h3>
+        <input
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+        />
+      </div>
+      <div
+        className="Settings-content-item"
+      >
+        <h3>
+          Phone
+        </h3>
+        <input
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+        />
+      </div>
+      <div
+        className="Settings-content-item"
+      >
+        <h3>
+          Timer
+        </h3>
+        <input
+          onChange={[Function]}
+          placeholder=""
+          type="number"
+        />
+      </div>
+    </div>
+    <button
+      className="Settings-button"
+      onClick={[Function]}
+    >
+      Save
+    </button>
+  </div>
+</div>
+`;

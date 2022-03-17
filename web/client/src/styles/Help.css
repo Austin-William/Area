@@ -1,0 +1,100 @@
+/* This file change the display of Help toast */
+
+.Help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+}
+
+.Help-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    color: rgb(0, 0, 0);
+}
+
+/* Help's content CSS part */
+
+.Help-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Help-content .Help-content-item-title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    background-color: rgb(0, 0, 0);
+}
+
+.Help-content .Help-content-item {
+    overflow-y: scroll;
+    width: 100%;
+    height: 50em;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: rgb(255, 255, 255);
+}
+
+.Help-content .Help-content-item-title h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+/* CSS part for responsive design */
+
+@media screen and (max-width: 768px) {
+    .Help-container {
+        width: 100%;
+        height: 100%;
+        padding: 0.5em;
+    }
+
+    .Help-content .Help-content-item {
+        width: 100%;
+    }
+
+    .Help-content .Help-content-item h3 {
+        font-size: 1.2em;
+        color: grey;
+    }
+}
+
+/* CSS for scroll bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(30deg, #67a8d3 40%, rgb(99, 134, 209) 60%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(30deg, #61ebf5 20%, #85f5fd 100%);
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .Home-container .Home-section {
+        grid-template-columns: 1fr;
+        margin: 1em;
+    }
+}

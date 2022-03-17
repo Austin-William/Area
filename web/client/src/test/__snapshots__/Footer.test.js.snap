@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components : Footer renders correctly 1`] = `
+<footer
+  className="Footer"
+>
+  <div
+    className="Footer-container"
+  >
+    <h1>
+      Creators
+    </h1>
+    <ul>
+      <li>
+        Austin
+      </li>
+      <li>
+        Chloé
+      </li>
+      <li>
+        Dylan
+      </li>
+      <li>
+        Luca
+      </li>
+      <li>
+        Vincent
+      </li>
+      <li>
+        Quentin
+      </li>
+    </ul>
+  </div>
+  <div>
+    <button
+      className="Footer-buttonUp"
+      onClick={[Function]}
+      variant="outline-light"
+    >
+      ⬆
+    </button>
+  </div>
+</footer>
+`;

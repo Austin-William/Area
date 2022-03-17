@@ -1,0 +1,35 @@
+name: BuildImages
+
+on:
+  push:
+    branches:
+      - master
+      - main
+      - dev
+      - app
+      - web
+      - backend
+
+jobs:
+  Docker_build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/Checkout@v2
+
+      - name: Compile app
+        shell: bash
+        run: docker build ./app
+
+      - name: Compile website client
+        shell: bash
+        run: docker build ./web/client
+
+      - name: Compile website server
+        shell: bash
+        run: docker build ./web/server
+
+      - name: Compile all
+        shell: bash
+        run: docker-compose build

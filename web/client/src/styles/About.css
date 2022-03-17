@@ -1,0 +1,224 @@
+/* CSS part for about page */
+
+.About-container {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* CSS for descrpition part */
+
+.About-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.About-description .About-description-title {
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 40px;
+	animation: fadeoutEffect 2s ease-in-out;
+}
+
+.About-description .About-description-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	animation: fadeoutEffect 2s ease-in-out;
+}
+
+/* CSS part for infos about us */
+
+.About-infos {
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.About-infos-title {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2em;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 20px;
+    margin-left: 2em;
+    margin-right: 2em;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* CSS part for infos items part */
+
+.About-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.About-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    width: 90%;
+}
+
+.About-item img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.About-item .About-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-name {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.About-name-description {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.About-info-adress {
+    margin-top: 3em;
+}
+
+.About-adress {
+    margin-top: 1.3em;
+}
+
+.About-infos-container .About-hr {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    width: 70%;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: aqua;
+}
+
+/* CSS part for the website description part */
+
+.About-infos-website {
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.About-infos-website .About-infos-description {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 70rem;
+}
+
+.About-infos-website .About-website-description {
+    width: 80%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 1.2px;
+}
+
+/* CSS part for responsive design */
+
+@media (max-width: 769px) {
+    .About-description .About-description-title {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .About-description .About-description-text {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .About-infos {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 2em;
+        font-size: 20px;
+    }
+
+    .About-infos .About-infos-title {
+        font-size: 30px;
+        padding: 1em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .About-infos .About-name {
+        font-size: 22px;
+    }
+
+    .About-item {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        width: 100%;
+    }
+
+    .About-item img {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .About-infos-container .About-hr {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 100%;
+        border: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: aqua;
+    }
+
+    .About-infos .About-website-description {
+        width: 100%;
+        font-size: 15px;
+        letter-spacing: 1.2px;
+    }
+}

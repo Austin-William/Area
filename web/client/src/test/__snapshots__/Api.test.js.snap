@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components : Api renders correctly 1`] = `
+<div
+  className="Api"
+>
+  <div
+    className="Api-container"
+  >
+    <div
+      className="Api-header"
+    >
+      <h1 />
+      <input
+        placeholder="Email"
+        type="text"
+      />
+      <input
+        placeholder="Password"
+        type="text"
+      />
+    </div>
+    <div
+      className="Api-footer"
+    >
+      <button
+        onClick={[Function]}
+      >
+        Add
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components : Api renders correctly 2`] = `
+<div
+  className="Api"
+>
+  <div
+    className="Api-container"
+  >
+    <div
+      className="Api-header"
+    >
+      <h1 />
+      <input
+        placeholder="Email"
+        type="text"
+      />
+      <input
+        placeholder="Password"
+        type="text"
+      />
+    </div>
+    <div
+      className="Api-footer"
+    >
+      <button
+        onClick={[Function]}
+      >
+        Add
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components : Api renders correctly 3`] = `
+<div
+  className="Api"
+>
+  <div
+    className="Api-container"
+  >
+    <div
+      className="Api-header"
+    >
+      <h1>
+        test
+      </h1>
+      <input
+        placeholder="Email"
+        type="text"
+      />
+      <input
+        placeholder="Password"
+        type="text"
+      />
+    </div>
+    <div
+      className="Api-footer"
+    >
+      <button
+        onClick={[Function]}
+      >
+        Add
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components : Api renders correctly 4`] = `
+<div
+  className="Api"
+>
+  <div
+    className="Api-container"
+  >
+    <div
+      className="Api-header"
+    >
+      <h1 />
+      <input
+        placeholder="Email"
+        type="text"
+      />
+      <input
+        placeholder="Password"
+        type="text"
+      />
+    </div>
+    <div
+      className="Api-footer"
+    >
+      <button
+        onClick={[Function]}
+      >
+        Add
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components : Api renders correctly 5`] = `
+<div
+  className="Api"
+>
+  <div
+    className="Api-container"
+  >
+    <div
+      className="Api-header"
+    >
+      <h1 />
+      <input
+        placeholder="Email"
+        type="text"
+      />
+      <input
+        placeholder="Password"
+        type="text"
+      />
+    </div>
+    <div
+      className="Api-footer"
+    >
+      <button
+        onClick={[Function]}
+      >
+        Add
+      </button>
+    </div>
+  </div>
+</div>
+`;

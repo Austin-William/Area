@@ -1,0 +1,136 @@
+/* CSS part for services page */
+
+.aos-init[data-aos][data-aos].aos-animate {
+  transform: unset;
+}
+
+.Services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Services-container .Services-header {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(30deg, #f6d365 0%, #fda085 100%);
+}
+
+.Services-description {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Services-description .Services-description-title {
+  font-size: 90px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+	animation: fadeoutEffectTitle 2s ease-in-out;
+}
+
+.Services-description .Services-description-text {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+	animation: fadeoutEffect 2s ease-in-out;
+}
+
+.Services-offers {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Services-offers-list {
+  padding: 3em;
+}
+
+/* CSS part for icon  */
+
+.Services-offers-item-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Services-offers-icon {
+  font-size: 6em;
+  margin: 0.2em;
+  padding: 0.8em;
+  color: black;
+  border-radius: 20%;
+  transition: all 0.3s ease-in-out;
+}
+
+.Services-offers-icon:hover {
+  color: white;
+  background-color: black;
+  border-radius: 30%;
+}
+
+.Services-offers-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+/* CSS part for offers description */
+
+.Services-offers .Services-offers-title {
+  word-spacing: 7px;
+  font-size: 2.5rem;
+  padding-top: 2em;
+}
+
+/* Function for animation */
+
+@keyframes fadeoutEffectTitle {
+	0% {
+	  opacity: 0;
+	  color: transparent;
+	  transform: scale(0);
+	}
+	100% {
+	  opacity: 1;
+	  transform: scale(1);
+	}
+}
+
+@media (max-width: 768px) {
+  .Services-description .Services-description-title {
+    font-size: 50px;
+  }
+
+  .Services-description .Services-description-text {
+    font-size: 1rem;
+  }
+
+  .Services-offers-icon {
+    font-size: 4em;
+    padding: 0.3em;
+    animation: none;
+    margin: auto;
+  }
+
+  .Services-offers .Services-offers-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

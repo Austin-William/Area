@@ -1,0 +1,120 @@
+/* This file change the display of settings toast */
+
+.Settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+}
+
+.Settings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    color: whitesmoke;
+}
+
+/* Settings's content CSS part */
+
+.Settings-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 80%;
+}
+
+.Settings-content .Settings-content-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: whitesmoke;
+}
+
+.Settings-content .Settings-content-item h3 {
+    font-size: 1.5em;
+    margin: 0.5em;
+    padding: 0.5em;
+    color: grey;
+    border-radius: 0.5em;
+}
+
+.Settings-content .Settings-content-item input {
+    width: 100%;
+    height: 50%;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    margin: 0.5em;
+    padding: 0.5em;
+    color: grey;
+    transition: 0.5s;
+}
+
+.Settings-content .Settings-content-item input:hover {
+    border-color: crimson;
+}
+
+.Settings-container .Settings-button, .Settings-container .Settings-button-disconnect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 10%;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: whitesmoke;
+    border-color: blueviolet;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.Settings-button-disconnect:hover {
+    background-color: red;
+}
+
+.Settings-container .Settings-button:hover {
+    border-color: whitesmoke;
+    background-color: whitesmoke;
+    color: blueviolet;
+}
+
+/* CSS part for responsive design */
+
+@media screen and (max-width: 768px) {
+    .Settings-container {
+        width: 100%;
+        height: 100%;
+        padding: 0.5em;
+    }
+
+    .Settings-content .Settings-content-item {
+        width: 100%;
+    }
+
+    .Settings-content .Settings-content-item h3 {
+        font-size: 1.2em;
+        color: grey;
+    }
+
+    .Settings-content .Settings-content-item input {
+        width: 100%;
+        font-size: 1em;
+        transition: 0.5s;
+    }
+}
